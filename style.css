@@ -1,0 +1,317 @@
+/* 1 - Body */
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    background-color: #fffbcc;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2, 3 - Header and Footer */
+.header, .footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* 4 - Main Container */
+.main {
+    padding: 20px;
+}
+
+/* 5 - Logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-img {
+    max-width: 150px; /* Adjust size as necessary */
+    height: auto;
+    margin-bottom: 10px; /* Space between the logo and the address */
+}
+
+.contract-address {
+    font-family: 'Courier New', Courier, monospace; /* Monospace to highlight the contract nature */
+    color: #333;
+    font-size: calc(10px + 1vmin); /* Responsive font size */
+    word-break: break-all; /* Ensures the address wraps and does not overflow */
+}
+
+
+/* 6 - Navigation */
+.navigation {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Additional CSS for Navigation Buttons */
+.navigation a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ff4500;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #dc882e;
+}
+
+/* Responsive adjustments for better mobile viewing */
+@media (max-width: 768px) {
+    .flex, .flex-col, .flex-row {
+        flex-direction: column;
+    }
+}
+
+
+/* 7 - Section */
+.section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 8 - Footer Paragraph */
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* 9 - Flex Container */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+/* 13 - Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* 14, 15 - Table Headers and Cells */
+th, td {
+    border: 2px solid #000;
+    padding: 8px;
+    text-align: left;
+    font-size: 18px;
+}
+
+th {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+/* 16 - Highlight Text */
+.highlight {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 17, 18 - Logo Container and Partner Images */
+.logo-container img, .partner img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+/* 19 - Flex Display */
+.flex {
+    display: flex;
+    gap: 16px;
+}
+
+/* 20, 21 - Flex Column and Row */
+.flex-col {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+
+/* 22 - Gap */
+.gap-4 {
+    gap: 16px;
+}
+
+/* 23 - Margin Top */
+.mt-8 {
+    margin-top: 32px;
+}
+
+/* 24, 25 - Hover Effects */
+.hover-scale:hover {
+    transform: scale(1.25);
+}
+.hover-bg:hover {
+    background-color: #E0E0E0;
+}
+
+/* 26 - Text Shadow */
+.text-shadow {
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* 27 - Box Shadow */
+.box-shadow {
+    box-shadow: 4px 4px 0 #000;
+}
+
+/* 28 - Rounded Medium */
+.rounded-md {
+    border-radius: 8px;
+}
+
+/* 29 - Thin Text Stroke */
+.text-stroke-thin {
+    -webkit-text-stroke: 1px black;
+}
+
+/* 30 - Background Meme Image */
+.bg-meme {
+    background-image: url('https://i.imgflip.com/5lk48v.jpg');
+    background-size: cover;
+    color: #000;
+    text-shadow: 2px 2px #ff0;
+}
+
+/* 31, 32 - Partners Container and Individual Partners */
+.partners-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.partner {
+    text-align: center;
+    flex-basis: 20%;
+    margin: 10px;
+}
+
+/* 33 - Function Steps */
+.function-steps {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+}
+
+/* 34 - Function Title */
+.function-title {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 35 - Function Description */
+.function-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* 36 - Step */
+.step {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+/* 37 - Step Title */
+.step-title {
+    font-weight: bold;
+    color: #444;
+}
+
+/* 38 - Step Description */
+.step-description {
+    font-size: 14px;
+    color: #555;
+}
+
+/* 39 - Explanation */
+.explanation {
+    font-style: italic;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* 40 - Intro */
+.intro {
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* 41 - Solidity Code Style */
+.solidity {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    overflow-x: auto; /* Allows horizontal scrolling if the content is too wide */
+    word-wrap: break-word; /* Ensures long words go to the next line */
+    white-space: pre-wrap; /* Maintains formatting but allows wrapping */
+    max-width: 100%; /* Ensures the block does not exceed the viewport width */
+}
+
+/* 42 - Token Info */
+.token-info {
+    color: #ff6347; /* Bright red for emphasis */
+    font-weight: bold;
+}
+
+
+img, pre {
+    max-width: 100%; /* Ensures images and pre elements do not overflow their container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Corrects alignment and box-sizing */
+    margin: 0 auto; /* Centers the element within its container */
+}
+
+.banner {
+    width: 100%; /* Ensures the banner stretches to the width of its container */
+    height: auto; /* Keeps aspect ratio intact */
+    display: block; /* Ensures it behaves like a block-level element */
+    margin-top: 20px; /* Adds spacing above the banner */
+}
+
+@media (max-width: 768px) {
+    .section, .flex-container, .partners-container, .navigation a {
+        flex-direction: column; /* Stacks the flex children vertically */
+        align-items: center; /* Aligns items in the center horizontally */
+        text-align: center; /* Ensures text is centered */
+        padding: 10px 0; /* Adds padding top and bottom for better spacing */
+    }
+
+    .button {
+        width: 90%; /* Reduces the width to give some margins */
+        margin: 10px auto; /* Centers the button and adds vertical spacing */
+    }
+
+    .partner, .logo-container {
+        justify-content: center; /* Ensures logos and partner icons are centered */
+    }
+}
