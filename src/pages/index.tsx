@@ -223,7 +223,7 @@ const TimeSinceDeployment = () => {
   const [timeSinceDeployment, setTimeSinceDeployment] = useState("");
 
   useEffect(() => {
-    const deploymentTimestamp = 1602340728; // Replace with actual deployment timestamp
+    const deploymentTimestamp = 1602341923; // Replace with actual deployment timestamp
     const deploymentTime = new Date(deploymentTimestamp * 1000);
 
     const interval = setInterval(() => {
