@@ -387,11 +387,14 @@ export default function Home() {
         <SectionContainer>
           <h2>Our Partners</h2>
           <PartnerContainer>
-            <a href="https://twitter.com/wojakfarm" target="_blank" rel="noopener noreferrer">
-              <Image src="/wojak-logo.jpg" alt="Wojak Logo" width={50} height={50} />
+          <a href="https://swap.ogpepe.io" target="_blank" rel="noopener noreferrer">
+              <Image src="/pepex.png" alt="PepeX Logo" width={50} height={50} />
             </a>
             <a href="https://twitter.com/theogpepe2020" target="_blank" rel="noopener noreferrer">
               <Image src="/pepe-logo.png" alt="Pepe Logo" width={50} height={50} />
+            </a>
+            <a href="https://twitter.com/wojakfarm" target="_blank" rel="noopener noreferrer">
+              <Image src="/wojak-logo.jpg" alt="Wojak Logo" width={50} height={50} />
             </a>
             <a href="https://twitter.com/chadcoinerc" target="_blank" rel="noopener noreferrer">
               <Image src="/chadred.png" alt="Chad 1 Logo" width={50} height={50} />
