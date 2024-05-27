@@ -34,7 +34,7 @@ const metadata = {
 	name: "Chad Token",
 	description: "The home of the CHAD community - 0x5c888fa2e6f9f0880321683d1efa12e936fd5051",
 	url: "https://chads.meme",
-	icons: ["https://chads.meme/chad.ico"],
+	icons: ["https://chads.meme/favicon.ico"],
 };
 
 const wagmiConfig = defaultWagmiConfig({ chains, projectId, metadata });

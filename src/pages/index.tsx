@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import Head from 'next/head';
 import Image from 'next/image';
 import styled from 'styled-components';
@@ -217,6 +218,40 @@ const SocialLinks = () => {
   );
 };
 
+
+const TimeSinceDeployment = () => {
+  const [timeSinceDeployment, setTimeSinceDeployment] = useState("");
+
+  useEffect(() => {
+    const deploymentTimestamp = 1602340728; // Replace with actual deployment timestamp
+    const deploymentTime = new Date(deploymentTimestamp * 1000);
+
+    const interval = setInterval(() => {
+      const now = new Date();
+      const timeDifference = now.getTime() - deploymentTime.getTime();
+
+      const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor(
+        (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+      );
+      const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+      setTimeSinceDeployment(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div>
+      <p>Age: {timeSinceDeployment}</p>
+    </div>
+  );
+};
+
 export default function Home() {
   return (
     <>
@@ -234,6 +269,7 @@ export default function Home() {
           <Title>Embrace the Meme</Title>
           <DescriptionContainer>
             <Address>0x5c888fa2e6f9f0880321683d1efa12e936fd5051</Address>
+            <TimeSinceDeployment />
 
             <ContentContainer>
               <DescriptionContainer>
