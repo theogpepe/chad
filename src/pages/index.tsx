@@ -177,9 +177,10 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+
 const Address = styled.h1`
   display: block; /* Ensures the element is block-level */
-  font-size: 2vw; /* Responsive font size based on the viewport width */
+  font-size: clamp(16px, 4vw, 2vw); /* Responsive font size adjusts between 16px and 2vw */
   word-wrap: break-word; /* Allows the address to break and wrap onto the next line */
   overflow: hidden; /* Hides any text that overflows the element's box */
   text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate text has been clipped */
@@ -189,6 +190,7 @@ const Address = styled.h1`
   color: #999; /* Sets the text color, adjust as needed */
   margin: 10px 0; /* Adds vertical spacing around the address */
 `;
+
 
 // Component for social links
 const SocialLinks = () => {
@@ -218,6 +220,17 @@ const SocialLinks = () => {
   );
 };
 
+const TimeDisplay = styled.div`
+  background-color: #111; // Light grey background
+  color: #333; // Dark text color for contrast
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+`;
 
 const TimeSinceDeployment = () => {
   const [timeSinceDeployment, setTimeSinceDeployment] = useState("");
@@ -246,12 +259,38 @@ const TimeSinceDeployment = () => {
   }, []);
 
   return (
-    <div>
-      <p>Age: {timeSinceDeployment}</p>
-    </div>
+    <TimeDisplay>
+    <LogoText>Deployed 10-10-2020</LogoText>
+    <LogoText>Age: {timeSinceDeployment}</LogoText>
+    </TimeDisplay>
+
   );
 };
 
+const TokenomicsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap; // Allows the boxes to wrap onto the next line
+  justify-content: center; // Centers the boxes within the container
+  gap: 20px; // Adds space between the boxes
+  padding: 20px;
+  margin-top: 20px;
+`;
+
+const TokenomicsBox = styled.div`
+  background-color: #111;
+  color: #fff; // Ensures text is readable against the dark background
+  border: 1px solid #ddd;
+  padding: 15px;
+  flex: 1 1 22%; // Allows the box to grow and shrink but bases its size on roughly 22% of the container width
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  min-width: 150px; // Prevents the boxes from becoming too small on narrow screens
+
+  @media (max-width: 768px) {
+    flex: 1 1 45%; // Changes the basis to 45%, causing only two boxes per row on smaller screens
+  }
+`;
 export default function Home() {
   return (
     <>
@@ -270,7 +309,12 @@ export default function Home() {
           <DescriptionContainer>
             <Address>0x5c888fa2e6f9f0880321683d1efa12e936fd5051</Address>
             <TimeSinceDeployment />
-
+            <TokenomicsContainer>
+              <TokenomicsBox>Supply: 181,928.8 $CHAD</TokenomicsBox>
+              <TokenomicsBox>0% Tax</TokenomicsBox>
+              <TokenomicsBox>Deflationary</TokenomicsBox>
+              <TokenomicsBox>LP: +5 Pools</TokenomicsBox>
+            </TokenomicsContainer>
             <ContentContainer>
               <DescriptionContainer>
                 <p>Explore the power of meme-driven cryptocurrency with $CHAD. Chad is tired of watching everyone play hot potato with the endless derivative ShibaCumGMElonKishuTurboAssFlokiMoon Inu coins. The Inu&apos;s have had their day.</p>
