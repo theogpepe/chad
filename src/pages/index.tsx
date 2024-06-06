@@ -377,7 +377,7 @@ export default function Home() {
             <Image src="/chadred.png" alt="Chad2 Logo" width={100} height={100} />
             <Image src="/chadtoken.png" alt="Chad3 Logo" width={100} height={100} />
             <p>+ (SWOT Analysis of 6 Chads)
-              <ButtonLink href="#buy"><a href="https://docs.ogpepe.io/wojak-pepe-chad/chad-chad/chad-index" target="_blank" rel="noopener noreferrer">LEARN</a></ButtonLink>
+              <ButtonLink href="#buy"><a href="https://docs.pepex.app/wojak-pepe-chad/chad-chad/chad-index" target="_blank" rel="noopener noreferrer">LEARN</a></ButtonLink>
             </p>
           </ImageContainer>
           <h2>Comparative Overview of Chad Tokens</h2>
@@ -387,7 +387,7 @@ export default function Home() {
         <SectionContainer>
           <h2>Our Partners</h2>
           <PartnerContainer>
-          <a href="https://swap.ogpepe.io" target="_blank" rel="noopener noreferrer">
+          <a href="https://pepex.app" target="_blank" rel="noopener noreferrer">
               <Image src="/pepex.png" alt="PepeX Logo" width={50} height={50} />
             </a>
             <a href="https://twitter.com/theogpepe2020" target="_blank" rel="noopener noreferrer">
