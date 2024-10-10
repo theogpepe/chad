@@ -344,7 +344,7 @@ export default function Home() {
           <ContentContainer>
             <DescriptionContainer>
               <Title>Our Version</Title>
-              <p>At $CHAD, we unite all these versions into a single, inclusive character that represents the best qualities of every Chad out there—confidence, ambition, and positivity.</p>
+              <p>At $CHAD, we unite all these versions into a single, inclusive character that represents the best qualities of every Chad out there: confidence, ambition, and positivity.</p>
               <p>Our Chad isn&apos;t just about physical prowess or stereotypical traits; it&apos;s a symbol of overcoming challenges, supporting others, and bringing people together.</p>
               <p>We&apos;ve taken the many faces of Chad and combined them into a character that everyone can see a bit of themselves in.</p>
             </DescriptionContainer>
