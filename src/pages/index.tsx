@@ -210,7 +210,7 @@ const SocialLinks = () => {
           <SocialIcon src="/socials/telegram-logo.png" alt="Telegram" />
         </SocialLink>
         <SocialLink href="https://www.dextools.io/app/es/ether/pair-explorer/0xf532da4460c965379593d38f89afae437fb54700" target="_blank" rel="noopener noreferrer">
-          <SocialIcon src="/socials/dextools-logo.png" alt="Dextools" />
+          <SocialIcon src="/socials/dextools.png" alt="Dextools" />
         </SocialLink>
         <SocialLink href="https://github.com/theogpepe" target="_blank" rel="noopener noreferrer">
           <SocialIcon src="/socials/github-logo.png" alt="GitHub" />
@@ -260,8 +260,8 @@ const TimeSinceDeployment = () => {
 
   return (
     <TimeDisplay>
-    <LogoText>Deployed 10-10-2020</LogoText>
-    <LogoText>Age: {timeSinceDeployment}</LogoText>
+      <LogoText>Deployed 10-10-2020</LogoText>
+      <LogoText>Age: {timeSinceDeployment}</LogoText>
     </TimeDisplay>
 
   );
@@ -329,6 +329,7 @@ export default function Home() {
             </ContentContainer>
             <ContentContainer>
               <DescriptionContainer>
+                <Title>Origins</Title>
                 <p>From humble beginnings as a simple internet joke to becoming a viral sensation, the Chad meme has evolved significantly over the years. Originally depicted as a hyper-masculine, often abrasive character, Chad has been reimagined in numerous forms across various platforms, each reflecting different aspects of internet culture.</p>
               </DescriptionContainer>
               <ImageContainer>
@@ -342,8 +343,10 @@ export default function Home() {
         <SectionContainer>
           <ContentContainer>
             <DescriptionContainer>
-              <p>Our Chad, however, breaks from the traditional mold to emphasize positivity and inclusivity—key aspects that set us apart in the meme-driven cryptocurrency space.</p>
-              <p>Our commitment to reshaping the narrative around what a meme can represent is central to our success. By steering away from any negative connotations and focusing on a family-friendly portrayal, we foster a broader acceptance and appeal. This approach not only aligns with modern values but also cements our position as pioneers in a rapidly evolving market.</p>
+              <Title>Our Version</Title>
+              <p>At $CHAD, we unite all these versions into a single, inclusive character that represents the best qualities of every Chad out there—confidence, ambition, and positivity.</p>
+              <p>Our Chad isn&apos;t just about physical prowess or stereotypical traits; it&apos;s a symbol of overcoming challenges, supporting others, and bringing people together.</p>
+              <p>We&apos;ve taken the many faces of Chad and combined them into a character that everyone can see a bit of themselves in.</p>
             </DescriptionContainer>
             <ImageContainer>
               <Image src="/chadtri.png" alt="Chad Positive" width={300} height={300} />
@@ -351,7 +354,9 @@ export default function Home() {
           </ContentContainer>
           <ContentContainer>
             <DescriptionContainer>
-              <p>Why will we succeed? Because at $CHAD, we&apos;re more than just a meme token; we are a symbol of change. By leveraging the universal language of memes, we connect with a global audience while promoting a safe, friendly, and engaging online experience. We&apos;re building a community where everyone feels welcome, valued, and entertained.</p>
+              <Title>More Than a Meme: A Movement</Title>
+              <p>We&apos;re not just creating another meme token; we&apos;re building a movement. $CHAD is a community-driven project that uses the universal language of memes to connect people across the globe.</p>
+              <p>We want everyone to feel welcome and be a part of something bigger. Our goal is to turn the idea of Chad into a symbol of positivity and unity. By focusing on fun and shared experiences, we&apos;re building a space where people can support each other, make new friends, and have a good time. It&apos;s more than just a token—it&apos;s a place where everyone belongs.</p>
             </DescriptionContainer>
             <ImageContainer>
               <Image src="/chadsize.png" alt="Chad Community" width={300} height={300} />
@@ -359,51 +364,6 @@ export default function Home() {
           </ContentContainer>
         </SectionContainer>
 
-        <SectionContainer>
-          <h2>Chad Token Ecosystem Leadership</h2>
-          <Banner>
-            <Image src="/banner.png" alt="Meme Banner" width={600} height={200} />
-          </Banner>
-          <p>As the original Chad token from 2020, we not only play a pivotal role in collecting tax across the entire ecosystem and maintaining a deflationary supply.</p>
-          <br></br>
-          <p>In demonstrating our dominance and commitment to the ecosystem, we have strategically purchased a significant percentage of the supply of other Chad tokens. This move asserts our position as the undisputed leader. These tokens have been added to liquidity pools with our token on PepeX to enhance stability and visibility within the marketplace.</p>
-          <br></br>
-          <h2>Chad Index</h2>
-          <br></br>
-
-          <p>The Chad token serves as an index within the ecosystem, promoting liquidity and stability by integrating with other Chad tokens.</p>
-          <ImageContainer>
-            <Image src="/chad.png" alt="Chad1 Logo" width={100} height={100} />
-            <Image src="/chadred.png" alt="Chad2 Logo" width={100} height={100} />
-            <Image src="/chadtoken.png" alt="Chad3 Logo" width={100} height={100} />
-            <p>+ (SWOT Analysis of 6 Chads)
-              <ButtonLink href="#buy"><a href="https://docs.pepex.app/wojak-pepe-chad/chad-chad/chad-index" target="_blank" rel="noopener noreferrer">LEARN</a></ButtonLink>
-            </p>
-          </ImageContainer>
-          <h2>Comparative Overview of Chad Tokens</h2>
-          <br></br>
-          <p>Within the diverse landscape of Chad tokens, each has distinct characteristics and strategic relevance. Unlike these tokens, our Chad token stands out as the most family-friendly and inclusive option in the market, emphasizing positive community values and sustainable growth. We&apos;re not just another meme token; we&apos;re a movement towards a more positive and inclusive digital currency environment.</p>
-        </SectionContainer>
-        <SectionContainer>
-          <h2>Our Partners</h2>
-          <PartnerContainer>
-          <a href="https://pepex.app" target="_blank" rel="noopener noreferrer">
-              <Image src="/pepex.png" alt="PepeX Logo" width={50} height={50} />
-            </a>
-            <a href="https://twitter.com/theogpepe2020" target="_blank" rel="noopener noreferrer">
-              <Image src="/pepe-logo.png" alt="Pepe Logo" width={50} height={50} />
-            </a>
-            <a href="https://twitter.com/wojakfarm" target="_blank" rel="noopener noreferrer">
-              <Image src="/wojak-logo.jpg" alt="Wojak Logo" width={50} height={50} />
-            </a>
-            <a href="https://twitter.com/chadcoinerc" target="_blank" rel="noopener noreferrer">
-              <Image src="/chadred.png" alt="Chad 1 Logo" width={50} height={50} />
-            </a>
-            <a href="https://twitter.com/chadtokenorg" target="_blank" rel="noopener noreferrer">
-              <Image src="/chadtoken.png" alt="Chad 2 Logo" width={50} height={50} />
-            </a>
-          </PartnerContainer>
-        </SectionContainer>
 
         <SectionContainer>
           <h2>Disclaimer</h2>
