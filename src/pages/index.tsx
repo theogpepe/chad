@@ -37,6 +37,24 @@ const ImageContainer = styled.div`
   margin: 20px auto;
 `;
 
+const ImageWorld = styled.div`
+  display: block;
+  margin: 20px auto;
+  width: 100%;           /* The container will take full width of its parent */
+  max-width: 1200px;      /* The max-width ensures it doesn’t stretch too wide */
+  height: auto;           /* Allows the height to adjust based on the content */
+  
+  /* Adjust margins and layout based on screen sizes using media queries */
+  @media (max-width: 768px) {
+    margin: 10px auto;    /* Reduce margins for smaller screens */
+    padding: 0 10px;      /* Add some padding to avoid edge collision */
+  }
+
+  @media (min-width: 1200px) {
+    margin: 40px auto;    /* Add more spacing for larger screens */
+  }
+`;
+
 const Banner = styled.div`
   width: 100%; /* Set the width of the container to 100% of its parent */
   overflow: hidden; /* Ensures that nothing extends beyond the boundary of the container */
@@ -291,6 +309,8 @@ const TokenomicsBox = styled.div`
     flex: 1 1 45%; // Changes the basis to 45%, causing only two boxes per row on smaller screens
   }
 `;
+
+
 export default function Home() {
   return (
     <>
@@ -337,7 +357,28 @@ export default function Home() {
               </ImageContainer>
             </ContentContainer>
             <SocialLinks />
-            <ButtonLink href="https://app.uniswap.org/#/swap?outputCurrency=0x5c888fa2e6f9f0880321683d1efa12e936fd5051" target="_blank" rel="noopener noreferrer">Buy $CHAD</ButtonLink>
+            <ButtonLink href="https://app.uniswap.org/#/swap?outputCurrency=0x5c888fa2e6f9f0880321683d1efa12e936fd5051" target="_blank" rel="noopener noreferrer">Buy $CHAD on ETH</ButtonLink>
+            <ButtonLink href="https://app.uniswap.org/explore/tokens/worldchain/0x50723a159ba02a1ada4d7e1a32835f7ff1f1be89" target="_blank" rel="noopener noreferrer">Buy $CHAD on WORLD</ButtonLink>
+
+          </DescriptionContainer>
+          <DescriptionContainer>
+            <Title>Bridged to World Chain</Title>
+            <ImageContainer>
+              <Image src="/wldlogo.png" alt="Chad History" width={300} height={300} style={{ borderRadius: '16px' }} />
+            </ImageContainer>
+            <p>We are excited to announce that $CHAD has successfully bridged to the World Chain! Explore all the available tools and links below:</p>
+            <Address>0x50723A159ba02A1ADA4d7E1A32835f7ff1F1bE89</Address>
+
+            <ButtonLink href="https://dexscreener.com/worldchain/0x89e8063556fef93a9ba5b5491207a8aaf6ebbdf4" target="_blank" rel="noopener noreferrer">
+              <Image src="/dexscreener.png" alt="Chad History" width={107} height={24} />
+            </ButtonLink>
+            <ButtonLink href="https://worldscan.org/token/0x50723A159ba02A1ADA4d7E1A32835f7ff1F1bE89" target="_blank" rel="noopener noreferrer">
+              <Image src="/wldlogo.png" alt="Chad History" width={24} height={24} style={{ borderRadius: '8px' }} />
+              Explorer
+            </ButtonLink>
+            <ButtonLink href="https://world-chain.superbridge.app/app/" target="_blank" rel="noopener noreferrer">
+              <Image src="/superbridge.png" alt="Chad History" width={136} height={24} />
+            </ButtonLink>
           </DescriptionContainer>
         </SectionContainer>
         <SectionContainer>
